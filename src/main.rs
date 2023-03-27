@@ -6,7 +6,7 @@ fn main() {
     loop{
         let mut length = String::from(""); 
         let mut password = String::from("");
-        let alphabet = String::from("abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=><QWERTYUIOPASDFGHJKLZXCVBNM:;");
+        let all_symbols = String::from("abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=><QWERTYUIOPASDFGHJKLZXCVBNM:;");
         println!("Password length: ");
         io::stdin().read_line(&mut length).expect("error (not a number)");
         let int_length : i32 = length.trim().parse().expect("error (not a number)");
