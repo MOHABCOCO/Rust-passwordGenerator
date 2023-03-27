@@ -13,14 +13,8 @@ fn main() {
         for i in 0..int_length{
             let random_index = rand::thread_rng().gen_range(0..alphabet.len());
             password.push(alphabet.chars().nth(random_index).unwrap());
-        }
         println!("Generated password: {}", password);
-
         print!("\n")
     
     }
-    
-    
-
-    
 }
